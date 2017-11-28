@@ -301,7 +301,8 @@
 						$('<div class="close">Close</div>')
 							.appendTo($this)
 							.on('click', function() {
-    						window.history.back();
+    						window.location.href=window.location.href.split('#')[0];
+    						
 						});
 
 					// Prevent clicks from inside article from bubbling.
